@@ -1,13 +1,12 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:liftui="clr-namespace:Lift.UI.Controls">
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:liftui="clr-namespace:Lift.UI.Controls">
 
     <Style TargetType="liftui:FloatingBlock">
-        <Setter Property="HorizontalAlignment" Value="Left"/>
-        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="liftui:FloatingBlock">
-                    <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}"/>
+                    <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" />
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

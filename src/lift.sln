@@ -7,7 +7,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lift.UI", "ui\Lift.UI\Lift.
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Lift.UI.Shared", "ui\Lift.UI.Shared\Lift.UI.Shared.shproj", "{F8515A76-80F1-4073-A46E-D16749EF668A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITest", "..\test\UITest\UITest.csproj", "{C67B762D-6EB4-4A31-87A0-A9B780C35012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UITest", "..\test\UITest\UITest.csproj", "{C67B762D-6EB4-4A31-87A0-A9B780C35012}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{A30A8D86-A3DD-4BCD-A33A-C2C423A84782}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{87F86D1F-DAA9-4AAB-A9B5-885EFB312DA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3D", "3D", "{8B2D4D95-F907-48F6-8246-D8E9D702D078}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.Shared", "..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.shproj", "{4EE18E80-7609-4FFF-BD4B-F02728EC0688}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Native.ShaderBuilder", "..\externals\helix\HelixToolkit.Native.ShaderBuilder\HelixToolkit.Native.ShaderBuilder.csproj", "{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.SharpDX.Shared", "..\externals\helix\HelixToolkit.SharpDX.Shared\HelixToolkit.SharpDX.Shared.shproj", "{1EAF532E-D750-497B-BB8F-EE85359C78A2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.SharpDX.SharedModel", "..\externals\helix\HelixToolkit.SharpDX.SharedModel\HelixToolkit.SharpDX.SharedModel.shproj", "{1AEFCB64-E997-425A-8C84-DC93263CC4A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf", "..\externals\helix\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj", "{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf.SharpDX", "..\externals\helix\HelixToolkit.Wpf.SharpDX\HelixToolkit.Wpf.SharpDX.csproj", "{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Externals", "Externals", "{D2D426D2-E800-409C-B90E-355A48C5670E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lift.3D", "3d\Lift.3D\Lift.3D.csproj", "{1160692B-63EF-41C8-BEF1-1F8562B143AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,15 +45,51 @@ Global
 		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1160692B-63EF-41C8-BEF1-1F8562B143AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1160692B-63EF-41C8-BEF1-1F8562B143AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1160692B-63EF-41C8-BEF1-1F8562B143AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1160692B-63EF-41C8-BEF1-1F8562B143AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16B9D25F-14EB-40C5-BB86-8D209F9B6A01} = {A30A8D86-A3DD-4BCD-A33A-C2C423A84782}
+		{F8515A76-80F1-4073-A46E-D16749EF668A} = {A30A8D86-A3DD-4BCD-A33A-C2C423A84782}
+		{C67B762D-6EB4-4A31-87A0-A9B780C35012} = {87F86D1F-DAA9-4AAB-A9B5-885EFB312DA0}
+		{4EE18E80-7609-4FFF-BD4B-F02728EC0688} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{1EAF532E-D750-497B-BB8F-EE85359C78A2} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{1AEFCB64-E997-425A-8C84-DC93263CC4A7} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{D2D426D2-E800-409C-B90E-355A48C5670E} = {8B2D4D95-F907-48F6-8246-D8E9D702D078}
+		{1160692B-63EF-41C8-BEF1-1F8562B143AB} = {8B2D4D95-F907-48F6-8246-D8E9D702D078}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {440312D7-DAA4-4B87-905F-312F1805C738}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ui\Lift.UI.Shared\Lift.UI.Shared.projitems*{16b9d25f-14eb-40c5-bb86-8d209f9b6a01}*SharedItemsImports = 5
+		..\externals\helix\HelixToolkit.SharpDX.SharedModel\HelixToolkit.SharpDX.SharedModel.projitems*{1aefcb64-e997-425a-8c84-dc93263cc4a7}*SharedItemsImports = 13
+		..\externals\helix\HelixToolkit.SharpDX.Shared\HelixToolkit.SharpDX.Shared.projitems*{1eaf532e-d750-497b-bb8f-ee85359c78a2}*SharedItemsImports = 13
+		..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.projitems*{4ee18e80-7609-4fff-bd4b-f02728ec0688}*SharedItemsImports = 13
+		..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.projitems*{6f4cc610-87b0-45b1-92f8-3ba4e33f28d4}*SharedItemsImports = 5
 		ui\Lift.UI.Shared\Lift.UI.Shared.projitems*{f8515a76-80f1-4073-a46e-d16749ef668a}*SharedItemsImports = 13
+		..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.projitems*{fa5c5a54-1ed7-4bc4-af89-40c59911d21a}*SharedItemsImports = 5
+		..\externals\helix\HelixToolkit.SharpDX.SharedModel\HelixToolkit.SharpDX.SharedModel.projitems*{fa5c5a54-1ed7-4bc4-af89-40c59911d21a}*SharedItemsImports = 5
+		..\externals\helix\HelixToolkit.SharpDX.Shared\HelixToolkit.SharpDX.Shared.projitems*{fa5c5a54-1ed7-4bc4-af89-40c59911d21a}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
