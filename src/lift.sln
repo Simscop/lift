@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lift.UI", "ui\Lift.UI\Lift.UI.csproj", "{16B9D25F-14EB-40C5-BB86-8D209F9B6A01}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Lift.UI.Shared", "ui\Lift.UI.Shared\Lift.UI.Shared.shproj", "{F8515A76-80F1-4073-A46E-D16749EF668A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITest", "..\test\UITest\UITest.csproj", "{C67B762D-6EB4-4A31-87A0-A9B780C35012}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16B9D25F-14EB-40C5-BB86-8D209F9B6A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16B9D25F-14EB-40C5-BB86-8D209F9B6A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16B9D25F-14EB-40C5-BB86-8D209F9B6A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16B9D25F-14EB-40C5-BB86-8D209F9B6A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {440312D7-DAA4-4B87-905F-312F1805C738}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ui\Lift.UI.Shared\Lift.UI.Shared.projitems*{16b9d25f-14eb-40c5-bb86-8d209f9b6a01}*SharedItemsImports = 5
+		ui\Lift.UI.Shared\Lift.UI.Shared.projitems*{f8515a76-80f1-4073-a46e-d16749ef668a}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
