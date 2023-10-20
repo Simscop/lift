@@ -20,7 +20,9 @@ namespace HelixToolkit.Wpf
         /// Identifies the <see cref="Thickness"/> dependency property.
         /// </summary>
         public static readonly DependencyProperty ThicknessProperty = DependencyProperty.Register(
-            "Thickness", typeof(double), typeof(LinesVisual3D), new UIPropertyMetadata(1.0, GeometryChanged));
+            //"Thickness", typeof(double), typeof(LinesVisual3D), new UIPropertyMetadata(1.0, GeometryChanged));
+            "Thickness", typeof(double), typeof(LinesVisual3D),
+            new FrameworkPropertyMetadata(1.0, FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.AffectsRender, GeometryChanged));
 
         /// <summary>
         /// The builder.

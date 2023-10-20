@@ -1,0 +1,63 @@
+﻿<Window
+    x:Class="ObjectTest.BoundTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:helix="https://github.com/pchuan98/helix"
+    xmlns:lift3d="https://github.com/pchuan98/Lift.Helix"
+    xmlns:local="clr-namespace:ObjectTest"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="BoundTest"
+    Width="800"
+    Height="450"
+    Topmost="True"
+    mc:Ignorable="d">
+    <Grid Margin="0">
+        <helix:HelixViewport3D
+            x:Name="Port"
+            Margin="5"
+            Background="WhiteSmoke"
+            CameraMode="Inspect"
+            Foreground="Black"
+            InfiniteSpin="True"
+            InfoBackground="Transparent"
+            InfoForeground="Black"
+            IsHeadLightEnabled="True"
+            RotationSensitivity="0.5"
+            ShowCameraInfo="True"
+            ShowCameraTarget="True"
+            ShowCoordinateSystem="False"
+            ShowFieldOfView="True"
+            ShowFrameRate="True"
+            ShowTriangleCountInfo="True"
+            ShowViewCube="False"
+            ZoomExtentsWhenLoaded="True">
+
+            <helix:BlackLight />
+
+            <!--<helix:BoundingBoxWireFrameVisual3D Thickness="2" Color="Red">
+                <helix:BoundingBoxWireFrameVisual3D.BoundingBox>
+                    <Rect3D
+                        SizeX="1000"
+                        SizeY="1000"
+                        SizeZ="1000"
+                        X="0"
+                        Y="0"
+                        Z="0" />
+                </helix:BoundingBoxWireFrameVisual3D.BoundingBox>
+            </helix:BoundingBoxWireFrameVisual3D>
+            <helix:BoundingBoxVisual3D Diameter="10" Fill="White">
+                <helix:BoundingBoxVisual3D.BoundingBox>
+                    <Rect3D
+                        SizeX="100"
+                        SizeY="100"
+                        SizeZ="100"
+                        X="0"
+                        Y="0"
+                        Z="0" />
+                </helix:BoundingBoxVisual3D.BoundingBox>
+            </helix:BoundingBoxVisual3D>-->
+            <helix:SphereVisual3D Fill="White" />
+        </helix:HelixViewport3D>
+    </Grid>
+</Window>

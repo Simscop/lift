@@ -23,7 +23,7 @@ public class PreviewSlider : Slider
 
     private FrameworkElement _previewContent;
 
-    private FrameworkElement _thumb;
+    private FrameworkElement? _thumb;
 
     private TranslateTransform _transform;
 

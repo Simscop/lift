@@ -1,0 +1,14 @@
+﻿<Application
+    x:Class="ObjectTest.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:lift3d="https://github.com/pchuan98/Lift.Helix"
+    xmlns:local="clr-namespace:ObjectTest">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <lift3d:Themes />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

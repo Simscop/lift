@@ -2389,10 +2389,11 @@ namespace HelixToolkit.Wpf
 
             if (this.isSpinning && this.spinningSpeed.LengthSquared > 0)
             {
-                if (this.InfiniteSpin)
-                    if (Math.Abs(this.spinningSpeed.X) - Math.Abs(spinningSpeed.Y) > 0)
-                        this.spinningSpeed.Y = 0;
-                    else this.spinningSpeed.X = 0;
+                // note 这里用来修改旋转的速度
+                //if (this.InfiniteSpin)
+                //    if (Math.Abs(this.spinningSpeed.X) - Math.Abs(spinningSpeed.Y) > 0)
+                //        this.spinningSpeed.Y = 0;
+                //    else this.spinningSpeed.X = 0;
 
 
                 this.rotateHandler.Rotate(

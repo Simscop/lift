@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Lift.Helix</AssemblyName>
+    <RootNamespace>Lift.Helix</RootNamespace>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XAMLCombineItems Remove="Resources\Base\Simple3DViewer.xaml" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\externals\helix\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj" />    
+  </ItemGroup>
+
+
+  <Import Project="..\Lift.Helix.Shared\Lift.Helix.Shared.projitems" Label="Shared" />
+  <Import Project="..\..\shared\Lift.Core\Lift.Core.projitems" Label="Shared" />
+
+</Project>
