@@ -20,8 +20,15 @@ namespace ObjectTest
             //var view = new BoundTest();
             //view.Show();
 
-            var main = new MainWindow();
-            main.Show();
+            //var main = new MainWindow();
+            //main.Show();
+
+            var directx = new DirectXView();
+            directx.Show();
+
+            //var scatter = new DirectScatterViewer();
+            //scatter.Show();
+
         }
     }
 }

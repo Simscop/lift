@@ -22,6 +22,7 @@ using HelixToolkit.SharpDX.Core.Model.Scene;
 namespace HelixToolkit.WinUI
 #else
 using System.Windows;
+using SharpDX;
 using Color = System.Windows.Media.Color;
 using Colors = System.Windows.Media.Colors;
 using Media = System.Windows.Media;
@@ -253,6 +254,7 @@ namespace HelixToolkit.Wpf.SharpDX
             material.Figure = Figure;
             material.FigureRatio = (float)FigureRatio;
             material.PointColor = Color.ToColor4();
+            
             material.FixedSize = FixedSize;
             base.AssignDefaultValuesToSceneNode(core);
         }

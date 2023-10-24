@@ -1,0 +1,72 @@
+﻿<liftui:Window
+    x:Class="ObjectTest.DirectScatterViewer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dx="https://github.com/pchuan98/helix/dx"
+    xmlns:liftui="https://github.com/pchuan98/Lift.UI"
+    xmlns:local="clr-namespace:ObjectTest"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="DirectScatterViewer"
+    Width="800"
+    Height="450"
+    d:DataContext="{d:DesignInstance local:DirectScatterViewModel}"
+    Topmost="True"
+    mc:Ignorable="d">
+
+    <liftui:Window.NonClientAreaContent>
+        <StackPanel
+            Margin="20,0,0,0"
+            HorizontalAlignment="Left"
+            Orientation="Horizontal">
+            <Menu>
+                <MenuItem Command="{Binding LoadCommand}" Header="Load" />
+                <MenuItem
+                    Margin="5,0"
+                    Command="dx:ViewportCommands.Reset"
+                    Header="Zoom" />
+            </Menu>
+        </StackPanel>
+    </liftui:Window.NonClientAreaContent>
+
+
+    <Grid>
+        <dx:Viewport3DX
+            x:Name="Port"
+            Background="Transparent"
+            BackgroundColor="Transparent"
+            Camera="{Binding Camera}"
+            EffectsManager="{Binding EffectsManager}"
+            EnableDpiScale="True"
+            EnableSSAO="True"
+            EnableSwapChainRendering="True"
+            InfiniteSpin="True"
+            InfoBackground="Transparent"
+            InfoForeground="Black"
+            MSAA="Two"
+            ShowCameraInfo="True"
+            ShowCameraTarget="False"
+            ShowCoordinateSystem="False"
+            ShowFrameDetails="True"
+            ShowFrameRate="True"
+            ShowTriangleCountInfo="True"
+            ShowViewCube="False">
+
+            <dx:AmbientLight3D Color="Red" />
+
+            <dx:PointGeometryModel3D
+                x:Name="Points"
+                Figure="Ellipse"
+                Geometry="{Binding Points}"
+                Transform="{Binding PointTransform}"
+                Color="White">
+                <!--<dx:PointGeometryModel3D.Size>
+                    <Size Width="8" Height="8" />
+                </dx:PointGeometryModel3D.Size>-->
+
+            </dx:PointGeometryModel3D>
+
+
+        </dx:Viewport3DX>
+    </Grid>
+</liftui:Window>

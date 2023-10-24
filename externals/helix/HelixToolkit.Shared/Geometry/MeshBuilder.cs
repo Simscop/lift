@@ -893,7 +893,7 @@ namespace HelixToolkit.Wpf
         /// The 3-D "rectangle".
         /// </param>
         /// <param name="faces">The faces to include.</param>
-        public void AddBox(Rect3D rectangle, BoxFaces faces = BoxFaces.All)
+        public void AddBox(Rect3D rectangle, double v, BoxFaces faces = BoxFaces.All)
         {
             this.AddBox(
                 new Point3D((DoubleOrSingle)(rectangle.X + (rectangle.SizeX * 0.5f)), (DoubleOrSingle)(rectangle.Y + (rectangle.SizeY * 0.5f)), (DoubleOrSingle)(rectangle.Z + (rectangle.SizeZ * 0.5f))),

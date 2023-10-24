@@ -5,6 +5,7 @@ Reference: https://graphicsrunner.blogspot.com/search/label/Volume%20Rendering
 */
 using SharpDX;
 using System;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
@@ -22,20 +23,41 @@ namespace HelixToolkit.UWP
     {
         public static class VolumeDataHelper
         {
-            /// <summary>
-            /// Generates gradients using a central differences scheme.
-            /// </summary>
-            /// <param name="data">Normalized voxel data</param>
-            /// <param name="width"></param>
-            /// <param name="height"></param>
-            /// <param name="depth"></param>
-            /// <param name="sampleSize">The size/radius of the sample to take.</param>
-            public static Half4[] GenerateGradients(float[] data, int width, int height, int depth, int sampleSize)
+            public static Half4[] DoNothing(float[] data, int width, int height, int depth, float wScale, float hScale, float dScale)
+            {
+                var gradients = new Half4[width * height * depth];
+                var count = 0;
+
+                Parallel.For(0, depth, new ParallelOptions() { MaxDegreeOfParallelism = 32 }, (z) =>
+                {
+                    ++count;
+                    Debug.WriteLine($"DoNothing -> {(count * 1.0 / depth * 1.0) * 100:F2}%");
+
+                    var index = z * width * height;
+
+                    for (var y = 0; y < height; y++)
+                    {
+                        for (var x = 0; x < width; x++, ++index)
+                        {
+                            gradients[index] = new Half4(x * wScale, y * hScale, z * dScale, data[index]);
+                        }
+                    }
+
+                    
+                });
+                return gradients;
+            }
+
+
+            public static Half4[] GenerateGradientsWithScale(float[] data, int width, int height, int depth, int sampleSize
+                , float wScale, float hScale, float dScale)
             {
                 var n = sampleSize;
 
                 var gradients = new Half4[width * height * depth];
-                Parallel.For(0, depth, new ParallelOptions() { MaxDegreeOfParallelism = 4 }, (z) =>
+                var count = 0;
+
+                Parallel.For(0, depth, new ParallelOptions() { MaxDegreeOfParallelism = 32 }, (z) =>
                 {
                     var index = z * width * height;
                     for (var y = 0; y < height; y++)
@@ -58,6 +80,54 @@ namespace HelixToolkit.UWP
                             }
                         }
                     }
+
+                    ++count;
+                    Debug.WriteLine($"GenerateGradients -> {(count * 1.0 / depth * 1.0) * 100:F2}%");
+                });
+                return gradients;
+            }
+
+            /// <summary>
+            /// Generates gradients using a central differences scheme.
+            /// </summary>
+            /// <param name="data">Normalized voxel data</param>
+            /// <param name="width"></param>
+            /// <param name="height"></param>
+            /// <param name="depth"></param>
+            /// <param name="sampleSize">The size/radius of the sample to take.</param>
+            public static Half4[] GenerateGradients(float[] data, int width, int height, int depth, int sampleSize)
+            {
+                var n = sampleSize;
+
+                var gradients = new Half4[width * height * depth];
+                var count = 0;
+
+                Parallel.For(0, depth, new ParallelOptions() { MaxDegreeOfParallelism = 32 }, (z) =>
+                {
+                    var index = z * width * height;
+                    for (var y = 0; y < height; y++)
+                    {
+                        for (var x = 0; x < width; x++, ++index)
+                        {
+                            Vector3 s1, s2;
+                            s1.X = SampleVolume(data, width, height, depth, x - n, y, z);
+                            s2.X = SampleVolume(data, width, height, depth, x + n, y, z);
+                            s1.Y = SampleVolume(data, width, height, depth, x, y - n, z);
+                            s2.Y = SampleVolume(data, width, height, depth, x, y + n, z);
+                            s1.Z = SampleVolume(data, width, height, depth, x, y, z - n);
+                            s2.Z = SampleVolume(data, width, height, depth, x, y, z + n);
+                            var v = Vector3.Normalize(s2 - s1);
+                            var sample = SampleVolume(data, width, height, depth, x, y, z);
+                            gradients[index] = new Half4(v.X, v.Y, v.Z, sample);
+                            if (float.IsNaN(gradients[index].X))
+                            {
+                                gradients[index] = new Half4(0, 0, 0, sample);
+                            }
+                        }
+                    }
+
+                    ++count;
+                    Debug.WriteLine($"GenerateGradients -> {(count * 1.0 / depth * 1.0) * 100:F2}%");
                 });
                 return gradients;
             }
@@ -84,6 +154,8 @@ namespace HelixToolkit.UWP
                             data[index++] = SampleNxNxN(data, width, height, depth, x, y, z, n).ToVector4(w);
                         }
                     }
+
+                    Debug.WriteLine($"FilterNxNxN -> {(z * 1.0 / depth) * 100:F2}%");
                 }
             }
 
@@ -123,7 +195,7 @@ namespace HelixToolkit.UWP
                     }
                 }
 
-                average /= (float)num;
+                average /= (float) num;
                 if (average.X != 0.0f && average.Y != 0.0f && average.Z != 0.0f)
                     average.Normalize();
 
@@ -168,9 +240,9 @@ namespace HelixToolkit.UWP
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
             private static float SampleVolume(float[] data, int width, int height, int depth, int x, int y, int z)
             {
-                x = (int)Math.Min(Math.Max(x, 0), width - 1);
-                y = (int)Math.Min(Math.Max(y, 0), height - 1);
-                z = (int)Math.Min(Math.Max(z, 0), depth - 1);
+                x = (int) Math.Min(Math.Max(x, 0), width - 1);
+                y = (int) Math.Min(Math.Max(y, 0), height - 1);
+                z = (int) Math.Min(Math.Max(z, 0), depth - 1);
 
                 return data[x + (y * width) + (z * width * height)];
             }

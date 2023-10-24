@@ -133,7 +133,7 @@ namespace HelixToolkit.Wpf.SharpDX
 
         /// <summary>
         /// Gets or sets the iso value. Only data with isovalue > sepecified iso value will be displayed
-        /// Value must be normalized to 0~1. Default = 1, show all data.
+        /// Value must be normalized to 0~1. Default = 0, show all data.
         /// </summary>
         /// <value>
         /// The iso value.

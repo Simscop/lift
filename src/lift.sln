@@ -15,18 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{87F86D1F-D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3D", "3D", "{8B2D4D95-F907-48F6-8246-D8E9D702D078}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.Shared", "..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.shproj", "{4EE18E80-7609-4FFF-BD4B-F02728EC0688}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Native.ShaderBuilder", "..\externals\helix\HelixToolkit.Native.ShaderBuilder\HelixToolkit.Native.ShaderBuilder.csproj", "{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.SharpDX.Shared", "..\externals\helix\HelixToolkit.SharpDX.Shared\HelixToolkit.SharpDX.Shared.shproj", "{1EAF532E-D750-497B-BB8F-EE85359C78A2}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.SharpDX.SharedModel", "..\externals\helix\HelixToolkit.SharpDX.SharedModel\HelixToolkit.SharpDX.SharedModel.shproj", "{1AEFCB64-E997-425A-8C84-DC93263CC4A7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf", "..\externals\helix\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj", "{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf.SharpDX", "..\externals\helix\HelixToolkit.Wpf.SharpDX\HelixToolkit.Wpf.SharpDX.csproj", "{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Externals", "Externals", "{D2D426D2-E800-409C-B90E-355A48C5670E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lift.Helix", "3d\Lift.Helix\Lift.Helix.csproj", "{39B86B01-BC1A-444F-802C-86C46194D704}"
@@ -38,6 +26,24 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Lift.Core", "shared\Lift.Core\Lift.Core.shproj", "{55B8AE0E-F663-4119-8A0F-4884D4ED4BC6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{E1EEA3DC-FEC9-4050-A1F2-272C8F61193A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkTest", "..\benchmarks\BenchmarkTest\BenchmarkTest.csproj", "{ACA8386B-6B60-4B85-80C2-37AAA56FFFB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Native.ShaderBuilder", "..\externals\helix\HelixToolkit.Native.ShaderBuilder\HelixToolkit.Native.ShaderBuilder.csproj", "{1D346DA9-FD10-47E8-94CE-4589DFB64EA8}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.Shared", "..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.shproj", "{4EE18E80-7609-4FFF-BD4B-F02728EC0688}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.SharpDX.Shared", "..\externals\helix\HelixToolkit.SharpDX.Shared\HelixToolkit.SharpDX.Shared.shproj", "{1EAF532E-D750-497B-BB8F-EE85359C78A2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.SharpDX.SharedModel", "..\externals\helix\HelixToolkit.SharpDX.SharedModel\HelixToolkit.SharpDX.SharedModel.shproj", "{1AEFCB64-E997-425A-8C84-DC93263CC4A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf", "..\externals\helix\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj", "{7334E41C-E75E-4B8E-868C-E27E85BE3295}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf.SharpDX", "..\externals\helix\HelixToolkit.Wpf.SharpDX\HelixToolkit.Wpf.SharpDX.csproj", "{6ADE44D6-9B5A-44CF-8361-F0C13FA78DAE}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.SharpDX.Assimp.Shared", "..\externals\helix\HelixToolkit.SharpDX.Assimp.Shared\HelixToolkit.SharpDX.Assimp.Shared.shproj", "{28E42939-814F-4E08-9CB1-69B493605DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit.Wpf.SharpDX.Assimp", "..\externals\helix\HelixToolkit.Wpf.SharpDX.Assimp\HelixToolkit.Wpf.SharpDX.Assimp.csproj", "{D52B86A5-518F-404E-A87A-7CF948769C67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,18 +59,6 @@ Global
 		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C67B762D-6EB4-4A31-87A0-A9B780C35012}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{39B86B01-BC1A-444F-802C-86C46194D704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{39B86B01-BC1A-444F-802C-86C46194D704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39B86B01-BC1A-444F-802C-86C46194D704}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -73,6 +67,26 @@ Global
 		{DB1B9FEC-1932-4056-9F7C-7BA0F97CC660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB1B9FEC-1932-4056-9F7C-7BA0F97CC660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB1B9FEC-1932-4056-9F7C-7BA0F97CC660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA8386B-6B60-4B85-80C2-37AAA56FFFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA8386B-6B60-4B85-80C2-37AAA56FFFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA8386B-6B60-4B85-80C2-37AAA56FFFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA8386B-6B60-4B85-80C2-37AAA56FFFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D346DA9-FD10-47E8-94CE-4589DFB64EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D346DA9-FD10-47E8-94CE-4589DFB64EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D346DA9-FD10-47E8-94CE-4589DFB64EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D346DA9-FD10-47E8-94CE-4589DFB64EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7334E41C-E75E-4B8E-868C-E27E85BE3295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7334E41C-E75E-4B8E-868C-E27E85BE3295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7334E41C-E75E-4B8E-868C-E27E85BE3295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7334E41C-E75E-4B8E-868C-E27E85BE3295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADE44D6-9B5A-44CF-8361-F0C13FA78DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADE44D6-9B5A-44CF-8361-F0C13FA78DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADE44D6-9B5A-44CF-8361-F0C13FA78DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADE44D6-9B5A-44CF-8361-F0C13FA78DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52B86A5-518F-404E-A87A-7CF948769C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52B86A5-518F-404E-A87A-7CF948769C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52B86A5-518F-404E-A87A-7CF948769C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52B86A5-518F-404E-A87A-7CF948769C67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,17 +95,20 @@ Global
 		{16B9D25F-14EB-40C5-BB86-8D209F9B6A01} = {A30A8D86-A3DD-4BCD-A33A-C2C423A84782}
 		{F8515A76-80F1-4073-A46E-D16749EF668A} = {A30A8D86-A3DD-4BCD-A33A-C2C423A84782}
 		{C67B762D-6EB4-4A31-87A0-A9B780C35012} = {87F86D1F-DAA9-4AAB-A9B5-885EFB312DA0}
-		{4EE18E80-7609-4FFF-BD4B-F02728EC0688} = {D2D426D2-E800-409C-B90E-355A48C5670E}
-		{EC3FC2CD-256D-46A6-8A19-133D6BA8680B} = {D2D426D2-E800-409C-B90E-355A48C5670E}
-		{1EAF532E-D750-497B-BB8F-EE85359C78A2} = {D2D426D2-E800-409C-B90E-355A48C5670E}
-		{1AEFCB64-E997-425A-8C84-DC93263CC4A7} = {D2D426D2-E800-409C-B90E-355A48C5670E}
-		{6F4CC610-87B0-45B1-92F8-3BA4E33F28D4} = {D2D426D2-E800-409C-B90E-355A48C5670E}
-		{FA5C5A54-1ED7-4BC4-AF89-40C59911D21A} = {D2D426D2-E800-409C-B90E-355A48C5670E}
 		{D2D426D2-E800-409C-B90E-355A48C5670E} = {8B2D4D95-F907-48F6-8246-D8E9D702D078}
 		{39B86B01-BC1A-444F-802C-86C46194D704} = {8B2D4D95-F907-48F6-8246-D8E9D702D078}
 		{DB1B9FEC-1932-4056-9F7C-7BA0F97CC660} = {87F86D1F-DAA9-4AAB-A9B5-885EFB312DA0}
 		{CF25A6B7-3329-4B32-A473-13F22982417C} = {8B2D4D95-F907-48F6-8246-D8E9D702D078}
 		{55B8AE0E-F663-4119-8A0F-4884D4ED4BC6} = {E1EEA3DC-FEC9-4050-A1F2-272C8F61193A}
+		{ACA8386B-6B60-4B85-80C2-37AAA56FFFB9} = {87F86D1F-DAA9-4AAB-A9B5-885EFB312DA0}
+		{1D346DA9-FD10-47E8-94CE-4589DFB64EA8} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{4EE18E80-7609-4FFF-BD4B-F02728EC0688} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{1EAF532E-D750-497B-BB8F-EE85359C78A2} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{1AEFCB64-E997-425A-8C84-DC93263CC4A7} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{7334E41C-E75E-4B8E-868C-E27E85BE3295} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{6ADE44D6-9B5A-44CF-8361-F0C13FA78DAE} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{28E42939-814F-4E08-9CB1-69B493605DB6} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{D52B86A5-518F-404E-A87A-7CF948769C67} = {D2D426D2-E800-409C-B90E-355A48C5670E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {440312D7-DAA4-4B87-905F-312F1805C738}
@@ -100,15 +117,17 @@ Global
 		ui\Lift.UI.Shared\Lift.UI.Shared.projitems*{16b9d25f-14eb-40c5-bb86-8d209f9b6a01}*SharedItemsImports = 5
 		..\externals\helix\HelixToolkit.SharpDX.SharedModel\HelixToolkit.SharpDX.SharedModel.projitems*{1aefcb64-e997-425a-8c84-dc93263cc4a7}*SharedItemsImports = 13
 		..\externals\helix\HelixToolkit.SharpDX.Shared\HelixToolkit.SharpDX.Shared.projitems*{1eaf532e-d750-497b-bb8f-ee85359c78a2}*SharedItemsImports = 13
+		..\externals\helix\HelixToolkit.SharpDX.Assimp.Shared\HelixToolkit.SharpDX.Assimp.Shared.projitems*{28e42939-814f-4e08-9cb1-69b493605db6}*SharedItemsImports = 13
 		3d\Lift.Helix.Shared\Lift.Helix.Shared.projitems*{39b86b01-bc1a-444f-802c-86c46194d704}*SharedItemsImports = 5
 		shared\Lift.Core\Lift.Core.projitems*{39b86b01-bc1a-444f-802c-86c46194d704}*SharedItemsImports = 5
 		..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.projitems*{4ee18e80-7609-4fff-bd4b-f02728ec0688}*SharedItemsImports = 13
 		shared\Lift.Core\Lift.Core.projitems*{55b8ae0e-f663-4119-8a0f-4884d4ed4bc6}*SharedItemsImports = 13
-		..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.projitems*{6f4cc610-87b0-45b1-92f8-3ba4e33f28d4}*SharedItemsImports = 5
+		..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.projitems*{6ade44d6-9b5a-44cf-8361-f0c13fa78dae}*SharedItemsImports = 5
+		..\externals\helix\HelixToolkit.SharpDX.SharedModel\HelixToolkit.SharpDX.SharedModel.projitems*{6ade44d6-9b5a-44cf-8361-f0c13fa78dae}*SharedItemsImports = 5
+		..\externals\helix\HelixToolkit.SharpDX.Shared\HelixToolkit.SharpDX.Shared.projitems*{6ade44d6-9b5a-44cf-8361-f0c13fa78dae}*SharedItemsImports = 5
+		..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.projitems*{7334e41c-e75e-4b8e-868c-e27e85be3295}*SharedItemsImports = 5
 		3d\Lift.Helix.Shared\Lift.Helix.Shared.projitems*{cf25a6b7-3329-4b32-a473-13f22982417c}*SharedItemsImports = 13
+		..\externals\helix\HelixToolkit.SharpDX.Assimp.Shared\HelixToolkit.SharpDX.Assimp.Shared.projitems*{d52b86a5-518f-404e-a87a-7cf948769c67}*SharedItemsImports = 5
 		ui\Lift.UI.Shared\Lift.UI.Shared.projitems*{f8515a76-80f1-4073-a46e-d16749ef668a}*SharedItemsImports = 13
-		..\externals\helix\HelixToolkit.Shared\HelixToolkit.Shared.projitems*{fa5c5a54-1ed7-4bc4-af89-40c59911d21a}*SharedItemsImports = 5
-		..\externals\helix\HelixToolkit.SharpDX.SharedModel\HelixToolkit.SharpDX.SharedModel.projitems*{fa5c5a54-1ed7-4bc4-af89-40c59911d21a}*SharedItemsImports = 5
-		..\externals\helix\HelixToolkit.SharpDX.Shared\HelixToolkit.SharpDX.Shared.projitems*{fa5c5a54-1ed7-4bc4-af89-40c59911d21a}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

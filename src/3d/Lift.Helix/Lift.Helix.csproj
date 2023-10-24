@@ -13,9 +13,10 @@
     <XAMLCombineItems Remove="Resources\Base\Simple3DViewer.xaml" />
   </ItemGroup>
 
-
   <ItemGroup>
-    <ProjectReference Include="..\..\..\externals\helix\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj" />    
+    <ProjectReference Include="..\..\..\externals\helix\HelixToolkit.Wpf.SharpDX.Assimp\HelixToolkit.Wpf.SharpDX.Assimp.csproj" />
+    <ProjectReference Include="..\..\..\externals\helix\HelixToolkit.Wpf.SharpDX\HelixToolkit.Wpf.SharpDX.csproj" />
+    <ProjectReference Include="..\..\..\externals\helix\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj" />
   </ItemGroup>
 
 

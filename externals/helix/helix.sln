@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf", "HelixTo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf.SharpDX", "HelixToolkit.Wpf.SharpDX\HelixToolkit.Wpf.SharpDX.csproj", "{054D0E77-9A6C-466B-8416-358D99631D61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demos\Demo\Demo.csproj", "{904D6544-D0FC-40E4-A671-EC7A41DA167A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{054D0E77-9A6C-466B-8416-358D99631D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{054D0E77-9A6C-466B-8416-358D99631D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{054D0E77-9A6C-466B-8416-358D99631D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904D6544-D0FC-40E4-A671-EC7A41DA167A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904D6544-D0FC-40E4-A671-EC7A41DA167A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904D6544-D0FC-40E4-A671-EC7A41DA167A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904D6544-D0FC-40E4-A671-EC7A41DA167A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

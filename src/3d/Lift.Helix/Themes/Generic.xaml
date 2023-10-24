@@ -16,8 +16,7 @@ Source files:
         <ControlTemplate TargetType="controls:SimpleScatterViewer">
           <controls:SimplePanel Background="Transparent">
             <helix:HelixViewport3D x:Name="PART_Port" Background="{TemplateBinding Background}" CameraMode="Inspect" Foreground="{TemplateBinding Foreground}" InfiniteSpin="True" InfoBackground="Transparent" InfoForeground="Black" IsHeadLightEnabled="True" RotationSensitivity="0.5" ShowCameraInfo="True" ShowCameraTarget="True" ShowCoordinateSystem="False" ShowFieldOfView="True" ShowFrameRate="True" ShowTriangleCountInfo="True" ShowViewCube="False" ZoomExtentsWhenLoaded="True">
-              <helix:DefaultLights />
-              <helix:DirectionalHeadLight />
+              <helix:WhiteLight />
               <componets:BoundViewer x:Name="PART_Bound" />
               <ModelVisual3D x:Name="PART_Axis" />
               <ModelVisual3D x:Name="PART_Scatter" />

@@ -9,10 +9,16 @@
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+    <PackageReference Include="OpenCvSharp4" Version="4.8.0.20230708" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.8.0.20230708" />
+    <PackageReference Include="OpenCvSharp4.WpfExtensions" Version="4.8.0.20230708" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\externals\helix\HelixToolkit.Wpf.SharpDX.Assimp\HelixToolkit.Wpf.SharpDX.Assimp.csproj" />
+    <ProjectReference Include="..\..\externals\helix\HelixToolkit.Wpf.SharpDX\HelixToolkit.Wpf.SharpDX.csproj" />
     <ProjectReference Include="..\..\src\3d\Lift.Helix\Lift.Helix.csproj" />
+    <ProjectReference Include="..\..\src\ui\Lift.UI\Lift.UI.csproj" />
   </ItemGroup>
 
 </Project>

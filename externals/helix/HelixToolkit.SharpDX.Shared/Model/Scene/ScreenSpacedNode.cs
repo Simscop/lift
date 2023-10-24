@@ -314,6 +314,7 @@ namespace HelixToolkit.UWP
                 var hitSP = context.HitPointSP;
                 var preHit = false;
                 screenSpacedContext.NearPlane = NearPlane;
+
                 screenSpacedContext.FarPlane = FarPlane;
                 switch (Mode)
                 {
