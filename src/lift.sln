@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf.SharpDX.As
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DxTest", "..\test\DxTest\DxTest.csproj", "{B9A65AF7-2A0B-4115-903C-32BAAA089721}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lift.Core", "core\Lift.Core\Lift.Core.csproj", "{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lift.Core", "core\Lift.Core\Lift.Core.csproj", "{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lift.Core.Test", "core\Lift.Core.Test\Lift.Core.Test.csproj", "{0BD987EE-5E0E-422E-AD9E-FACF3293EBFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BD987EE-5E0E-422E-AD9E-FACF3293EBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD987EE-5E0E-422E-AD9E-FACF3293EBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD987EE-5E0E-422E-AD9E-FACF3293EBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD987EE-5E0E-422E-AD9E-FACF3293EBFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,16 +8,15 @@
 
   <ItemGroup>
     <Compile Remove="Common\NewFolder\**" />
+    <Compile Remove="Helper\NewFolder\**" />
     <EmbeddedResource Remove="Common\NewFolder\**" />
+    <EmbeddedResource Remove="Helper\NewFolder\**" />
     <None Remove="Common\NewFolder\**" />
+    <None Remove="Helper\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="Helper\NewFolder\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="MetadataExtractor" Version="2.8.1" />
     <PackageReference Include="OpenCvSharp4" Version="4.8.0.20230708" />
   </ItemGroup>
 

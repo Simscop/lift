@@ -248,6 +248,7 @@ public partial class DirectXViewModel : BaseDirectXViewModel
         //var (material, transform) = GenerateFromPath(@"E:\test\profiling002.tif");
         //var (material, transform) = GenerateFromPath(@"E:\test\profiling001.tif");
         //var (material, transform) = GenerateFromPath(@"C:\Users\haeer\Desktop\Stack.tif");
+        var (material, transform) = GenerateFromPath(@"C:\Users\haeer\Desktop\Stack.tif");
         VolumeMaterial = material.Clone() as Material;
         //VolumeMaterial!.Freeze();
         Transform = transform;
@@ -321,7 +322,7 @@ public partial class DirectXViewModel : BaseDirectXViewModel
         {
             var mat = mats[i];
 
-            mat.GetArray(out ushort[] da);
+            mat.GetArray(out byte[] da);
             mat.MinMaxLoc(out double vmin, out double vmax);
             min = Math.Min(min, vmin);
             max = Math.Max(max, vmax);
@@ -343,7 +344,7 @@ public partial class DirectXViewModel : BaseDirectXViewModel
             {
                 for (var x = 0; x < width; x++, ++index)
                 {
-                    var value = mat.At<ushort>(y, x);
+                    var value = mat.At<byte>(y, x);
                     var w = (float) (value - min) / ((float) range * 1.0f);
                     //w = w < 0.1 ? 0.0001f : w;
                     data[index] = w;
