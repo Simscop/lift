@@ -198,9 +198,9 @@ public partial class DirectXViewModel : BaseDirectXViewModel
 
     (Material material, Media3D.Transform3D transform) Generate()
     {
-        var x = 100;
-        var y = 100;
-        var z = 100;
+        var x = 2;
+        var y = 2;
+        var z = 2;
 
         var material = new VolumeTextureDiffuseMaterial();
         var transform = new Media3D.ScaleTransform3D(1, 1, 1);
@@ -219,17 +219,17 @@ public partial class DirectXViewModel : BaseDirectXViewModel
             {
                 for (int k = 0; k < z; k++)
                 {
-                    data[i * y * z + j * z + k] = random.NextFloat(0, 1);
+                    data[i * y * z + j * z + k] = 1;
                 }
             }
         }
 
 
-        var gradients = VolumeDataHelper.GenerateGradients(data, x, y, z, 1);
-        VolumeDataHelper.FilterNxNxN(gradients, x, y, z, 3);
+        var gradients = VolumeDataHelper.DoNothing(data, x, y, z, 1, 1, 1);
+        //VolumeDataHelper.FilterNxNxN(gradients, x, y, z, 3);
 
         material.Texture = new VolumeTextureGradientParams(gradients, x, y, z);
-        material.Color = new Color4(0, 1, 0, 0.01f);
+        material.Color = new Color4(0, 1, 0, 1f);
 
         transform.Freeze();
         material.Freeze();
@@ -242,11 +242,11 @@ public partial class DirectXViewModel : BaseDirectXViewModel
     {
         //var (material, transform) = Generate();
         ////var (material, transform) = SimpleGenerate();
-        //var (material, transform) = GenerateFromPath(@"E:\test\pollen.tif");
+        var (material, transform) = GenerateFromPath(@"E:\test\pollen.tif");
         //var (material, transform) = GenerateFromPath(@"E:\test\mouse3D.tif");
         //var (material, transform) = GenerateFromPath(@"E:\test\profiling001.tif");
         //var (material, transform) = GenerateFromPath(@"E:\test\profiling002.tif");
-        var (material, transform) = GenerateFromPath(@"E:\test\profiling001.tif");
+        //var (material, transform) = GenerateFromPath(@"E:\test\profiling001.tif");
         //var (material, transform) = GenerateFromPath(@"C:\Users\haeer\Desktop\Stack.tif");
         VolumeMaterial = material.Clone() as Material;
         //VolumeMaterial!.Freeze();
@@ -301,7 +301,7 @@ public partial class DirectXViewModel : BaseDirectXViewModel
         double scale = 1;
         float wscale = 1 * (1.0f / (float) scale);
         float hscale = 1 * (1.0f / (float) scale);
-        float dscale = 1f;
+        float dscale = 2f * (1.0f / (float) scale);
 
         var width = (int) (imgs[0].Width * scale);
         var height = (int) (imgs[0].Height * scale);
@@ -436,5 +436,7 @@ public partial class DirectXViewModel : BaseDirectXViewModel
         var vol = VolumeMaterial as VolumeTextureDiffuseMaterial;
         vol.Color = new Color4(0, 1, 0, (float) value / 10000f);
         //VolumeMaterial = material.Clone() as Material;
+
+        //vol.Freeze();
     }
 }

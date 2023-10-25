@@ -43,7 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf.SharpDX", 
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelixToolkit.SharpDX.Assimp.Shared", "..\externals\helix\HelixToolkit.SharpDX.Assimp.Shared\HelixToolkit.SharpDX.Assimp.Shared.shproj", "{28E42939-814F-4E08-9CB1-69B493605DB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit.Wpf.SharpDX.Assimp", "..\externals\helix\HelixToolkit.Wpf.SharpDX.Assimp\HelixToolkit.Wpf.SharpDX.Assimp.csproj", "{D52B86A5-518F-404E-A87A-7CF948769C67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelixToolkit.Wpf.SharpDX.Assimp", "..\externals\helix\HelixToolkit.Wpf.SharpDX.Assimp\HelixToolkit.Wpf.SharpDX.Assimp.csproj", "{D52B86A5-518F-404E-A87A-7CF948769C67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DxTest", "..\test\DxTest\DxTest.csproj", "{B9A65AF7-2A0B-4115-903C-32BAAA089721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lift.Core", "core\Lift.Core\Lift.Core.csproj", "{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{D52B86A5-518F-404E-A87A-7CF948769C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D52B86A5-518F-404E-A87A-7CF948769C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D52B86A5-518F-404E-A87A-7CF948769C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A65AF7-2A0B-4115-903C-32BAAA089721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A65AF7-2A0B-4115-903C-32BAAA089721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A65AF7-2A0B-4115-903C-32BAAA089721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A65AF7-2A0B-4115-903C-32BAAA089721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD12868-5C7B-4305-8C58-6D65B99C8EFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +121,7 @@ Global
 		{6ADE44D6-9B5A-44CF-8361-F0C13FA78DAE} = {D2D426D2-E800-409C-B90E-355A48C5670E}
 		{28E42939-814F-4E08-9CB1-69B493605DB6} = {D2D426D2-E800-409C-B90E-355A48C5670E}
 		{D52B86A5-518F-404E-A87A-7CF948769C67} = {D2D426D2-E800-409C-B90E-355A48C5670E}
+		{B9A65AF7-2A0B-4115-903C-32BAAA089721} = {87F86D1F-DAA9-4AAB-A9B5-885EFB312DA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {440312D7-DAA4-4B87-905F-312F1805C738}

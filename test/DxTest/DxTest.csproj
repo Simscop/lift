@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\3d\Lift.Helix\Lift.Helix.csproj" />
+    <ProjectReference Include="..\..\src\ui\Lift.UI\Lift.UI.csproj" />
+  </ItemGroup>
+
+</Project>

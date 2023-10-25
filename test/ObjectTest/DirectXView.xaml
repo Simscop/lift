@@ -112,8 +112,8 @@
                 </StackPanel>
                 <Slider
                     Margin="4,10"
-                    Maximum="5"
-                    Minimum="0.1"
+                    Maximum="100"
+                    Minimum="0.00001"
                     Value="{Binding SampleDistance}" />
                 <CheckBox Margin="4,10" IsChecked="{Binding EnablePlaneAlignment}">Plane Alignment</CheckBox>
             </StackPanel>
